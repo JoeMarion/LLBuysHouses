@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+ysource 'https://rubygems.org'
 
 gem 'rails', '4.2.5'
 gem 'pg', '~> 0.15'
@@ -14,7 +14,6 @@ gem 'haml-rails'
 gem 'faker'
 gem 'awesome_print'
 gem 'possessive'
-
 
 group :test do
   gem "launchy"
