@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.header-container {
+header {
   background: url(<%= image_url('nicehouse.jpg') %>) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -12,4 +12,43 @@
   height: 88em;
   top: 0;
   width: 100%;
+}
+
+nav {
+  height: 60px;
+  background: rgba(255,255,255,0.60);
+}
+
+#logo {
+  width: 60px;
+}
+
+#nav-container {
+  width: 100%;
+  // max-width: 120rem;
+  padding: 0 2.5rem;
+  ul li {
+    font-size: 3rem;
+    span {
+      color: red;
+    }
+  }
+}
+#header-container {
+  height: 35rem;
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+.bg-red {
+  background: red;
+}
+.bg-blue {
+  background: blue;
+}
+.bg-purple {
+  background: purple;
+}
+.bg-pink {
+  background: pink;
 }
