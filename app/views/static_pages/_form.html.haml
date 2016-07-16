@@ -1,13 +1,11 @@
 %section#contact-form.jc-center.all-12.bg-dark
-  #form-container.wrap
-    %h2 Contact
-    .form.all-12
+  #form-container.wrap.jc-center
+    %h2.text-center Contact
+    .form.all-12.box.x-center
       = form_tag do |form|
         = text_field_tag "name", nil, :placeholder =>"name"
         = text_field_tag "property address", nil, :placeholder => "property address"
         = text_field_tag "phone", nil, :placeholder => "phone number"
         = text_field_tag "email", nil, :placeholder => "e-mail"
-        // = submit_tag('SUBMIT') 
+        // = submit_tag('SUBMIT')
         // %button(type="button") SUBMIT
-
-

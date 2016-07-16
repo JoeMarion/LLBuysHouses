@@ -1,0 +1,21 @@
+button {
+  padding: 1.25rem;
+  border-radius: .8rem;
+  font-size: 1.75rem;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  background: #65AFFF;
+  color: $color1;
+  padding-left: 1.9rem;
+  padding-right: 1.9rem;
+  box-shadow: 0 2px 5px black;
+  position: relative;
+  top: -1px;
+  transition: .5s all;
+
+  &:active {
+    box-shadow: 0 0 0 black;
+    top: 0;
+  }
+}

@@ -1,0 +1,18 @@
+header {
+  background: url('exotic-house.jpg') no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: -150% 125%;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+}
+
+#header-container {
+  height: 100vh;
+  color: white;
+  h1 {
+    font-size: 4.5rem;
+  }
+}

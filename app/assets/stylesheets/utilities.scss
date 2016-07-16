@@ -1,0 +1,29 @@
+.bg-red {
+  background: red;
+}
+.bg-blue {
+  background: blue;
+}
+.bg-purple {
+  background: purple;
+}
+.bg-pink {
+  background: pink;
+}
+.bg-dark-50 {
+  background: rgba(13, 19, 33, .55);
+  // background: rgba(0, 0, 0, .5);
+}
+.bg-dark {
+  background: $color1;
+  color: white;
+}
+.bg-grey {
+  background: #333;
+}
+.text-center {
+  text-align: center;
+}
+.container {
+  max-width: 120rem;
+}
