@@ -1,10 +1,25 @@
-%nav.all-12.box.x-center
-  #nav-container.container.jc-between.ai-center.all-12
-    %ul.box.all-12.y-center.even-space
-      %li
-        home
-      %li#logo
-        LL
-      %li
-        logout
+%header.box-col.all-12
+  .bg-black-50.box-col.all-12.x-center
+    %nav.all-12.box.x-center
+      #nav-container.container.jc-between.ai-center.all-12
+        %ul.box.all-12.y-center.even-space
+          %li
+            home
+          %li#logo
+            LL
+          %li
+            = "Welcome, #{current_user.first_name}"
+          %li
+            = link_to "logout", destroy_user_session_path
 
+.all-12.box.x-center
+  #users-container.container.jc-between.ai-center.all-12.box-col
+    .user-container.box-col.all-12.y-center.even-space
+    - @houses.each do |listing|
+      .user-list.all-12.box-col
+        .user-info.all-12
+          = listing.name
+        .listing-expand
+          %p.address= listing.address
+          %p.phone= listing.phone_number
+          %p.email= listing.email
