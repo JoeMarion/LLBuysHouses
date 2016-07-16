@@ -1,0 +1,10 @@
+%section#contact-form.jc-center.all-12
+  #form-container
+    %h3 Contact
+    .form
+      = form_tag do |form|
+        = text_field_tag "name", nil, :placeholder =>"name"
+        = text_field_tag "property address", nil, :placeholder => "property address"
+        = text_field_tag "phone", nil, :placeholder => "phone number"
+        = text_field_tag "email", nil, :placeholder => "e-mail"
+        = submit_tag('Submit')
