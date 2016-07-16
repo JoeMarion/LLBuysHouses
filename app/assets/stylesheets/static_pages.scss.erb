@@ -62,6 +62,10 @@ nav {
   }
 }
 
+.call span {
+  font-weight: 700;
+}
+
 #contain-features {
   margin-top: 3rem;
 }
@@ -73,20 +77,27 @@ nav {
   //   transform: rotateY(180deg);
   // }
 }
-  
+
+/////////////////////////
+ // Contact Form Style //
+ ///////////////////////
 #contact-form {
-  height: 450px;
+  padding: 2.5rem 0;
 }
 
 #form-container {
   max-width: 120rem;
-  height: 35rem;
 }
 
-
-
-.call span {
-  font-weight: 700;
+.form {
+  input {
+    padding: 1.25rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    &::-webkit-input-placeholder {
+      color:black;
+    }
+  }
 }
 
 .bg-red {
@@ -103,6 +114,10 @@ nav {
 }
 .bg-black-50 {
   background: rgba(0,0,0,0.55);
+}
+.bg-dark {
+  background: #333;
+  color: white;
 }
 .container {
   max-width: 120rem;

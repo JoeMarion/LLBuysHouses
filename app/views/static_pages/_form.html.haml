@@ -1,7 +1,7 @@
-%section#contact-form.jc-center.all-12
-  #form-container
-    %h3 Contact
-    .form
+%section#contact-form.jc-center.all-12.bg-dark
+  #form-container.wrap
+    %h2 Contact
+    .form.all-12
       = form_tag do |form|
         = text_field_tag "name", nil, :placeholder =>"name"
         = text_field_tag "property address", nil, :placeholder => "property address"
