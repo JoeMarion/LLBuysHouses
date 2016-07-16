@@ -1,2 +1,9 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+var ready;
+ready = function() {
+  console.log("test");
+  $(".user-info").on("click", function(e) {
+    $(this).closest('.user-list').find('.listing-expand').fadeToggle();
+  });
+};
+
+$(document).ready(ready);
