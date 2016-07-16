@@ -8,14 +8,14 @@ html {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Prompt', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 body {
-  background-color: white;
+  background: white;
   font-family: $primary-font;
-  font-weight: 600;
+  letter-spacing: 1px;
   line-height: 1.45;
   color: #333;
   font-size: 1.8rem;

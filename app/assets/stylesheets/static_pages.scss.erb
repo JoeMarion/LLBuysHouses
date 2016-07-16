@@ -3,10 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 header {
-  background: url(<%= image_url('nicehouse.jpg') %>) no-repeat center center fixed;
+  background: url(<%= image_url('exotic-house.jpg') %>) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-position: -150% 125%;
   background-size: cover;
   height: 70vh;
   width: 100%;
@@ -14,6 +15,8 @@ header {
 
 nav {
   height: 60px;
+  position: relative;
+  top: 20px;
   // background: rgba(255,255,255,0.60);
 }
 
@@ -24,13 +27,9 @@ nav {
 #nav-container {
   color: white;
   width: 100%;
-  // max-width: 120rem;
   padding: 0 2.5rem;
   ul li {
-    font-size: 3rem;
-    span {
-      color: red;
-    }
+    font-size: 1.6rem;
   }
 }
 #header-container {
@@ -67,6 +66,13 @@ nav {
   margin-top: 3rem;
 }
 
+#logo {
+  font-weight: 900;
+  font-size: 3.8rem !important;
+  // &::first-letter {
+  //   transform: rotateY(180deg);
+  // }
+}
 
 .bg-red {
   background: red;
@@ -79,4 +85,10 @@ nav {
 }
 .bg-pink {
   background: pink;
+}
+.bg-black-50 {
+  background: rgba(0,0,0,0.55);
+}
+.container {
+  max-width: 120rem;
 }
