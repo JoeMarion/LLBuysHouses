@@ -2,7 +2,7 @@ User.destroy_all
 House.destroy_all
 
 
-User.create!(admin: true, email: "admin@example.com", password: 'password', password_confirmation: 'password')
+User.create!(admin: true, first_name: "Hank", last_name: "Example", email: "admin@example.com", password: 'password', password_confirmation: 'password')
 
 50.times do |n|
   House.create!(address: "#{Faker::Address.street_address}, 

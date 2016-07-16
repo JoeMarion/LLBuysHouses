@@ -10,7 +10,7 @@
           %li
             = "Welcome, #{current_user.first_name}"
           %li
-            = link_to "logout", destroy_user_session_path
+            = link_to "logout", destroy_user_session_path, method: "delete"
 
 .all-12.box.x-center
   #users-container.container.jc-between.ai-center.all-12.box-col
