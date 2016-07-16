@@ -12,6 +12,68 @@ box-col, .box-col, [box-col] {
   flex-direction: column;
 }
 
+/* Horizontally align boxs */
+.box.x-center,
+[box].x-center {
+  justify-content: center;
+}
+
+/* Horizontally align box-cols */
+.box-col.x-center,
+[box-col].x-center {
+  align-items: center;
+}
+
+/*************************/
+
+/* Vertically align box children */
+.box.y-center,
+[box].y-center {
+  align-items: center;
+}
+
+/* Vertically align box-col children */
+.box-col.y-center,
+[box-col].y-center {
+  justify-content: center;
+}
+
+/*************************/
+
+/* Horizontally apply even spacing to box children */
+.box.even-space,
+[box].even-space {
+  justify-content: space-around;
+}
+
+/* Vertically apply even spacing to box-col children */
+.box-col.even-space,
+[box-col].even-space {
+  justify-content: space-around;
+}
+
+/*************************/
+
+/* Horizontally apply space between box children */
+.box.space-inside,
+[box].space-inside,
+/* Vertically apply space between to box-col children */
+.box-col.space-inside,
+[box-col].space-inside  {
+  justify-content: space-between;
+}
+
+/*************************/
+
+/* Horizontally push children to end of box */
+.box.align-end,
+[box].align-end,
+/* Vertically push children to end of box-col */
+.box-col.align-end,
+[box-col].align-end  {
+  justify-content: flex-end;
+}
+
 /*
 justify-content aligns horizontally, unless
 flex-direction: column -- in which case it

@@ -1,7 +1,18 @@
-about
-#about-content.box-col.jc-center.all-12
-  %h1 We buy houses
-  %p
-    Get a guaranteed top offer for your house.
-  %h3 Call us!
-  %p 281-858-3090
+%section#about.jc-center.all-12
+  #about-container.box-col.ai-center.jc-around.all-12
+    -# .box#features-header.box-col
+    -#   %h2 We buy houses
+
+    #contain-features.box.jc-center
+      .box-col.feature-box.ai-center.text-align
+        =image_tag "coin.svg", alt: "coin", id:"coin"
+        %h3 Top Offer
+        %p Get a guaranteed top offer for your house.
+      .box-col.feature-box.ai-center.text-align
+        =image_tag "house-4.svg", alt: "house", id:"house"
+        %h3 Any condition
+        %p We buy homes in any condition
+      .box-col.feature-box.ai-center.text-align
+        =image_tag "sold.svg", alt: "sold", id:"sold"
+        %h3 Call today
+        %p Call 281 858-3090 and sell your home today
