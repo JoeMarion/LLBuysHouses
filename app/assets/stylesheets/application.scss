@@ -24,12 +24,17 @@
 @import "form.scss";
 
 // Nav
-nav {
+nav,#sm-nav{
   height: 60px;
   position: relative;
   top: 20px;
   // background: rgba(255,255,255,0.60);
 }
+
+#sm-nav {
+  padding: 0 2.5rem;
+}
+
 
 #logo {
   font-weight: 900;
