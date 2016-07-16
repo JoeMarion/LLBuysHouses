@@ -66,14 +66,12 @@ nav {
   margin-top: 3rem;
 }
 
-<<<<<<< HEAD
 #logo {
   font-weight: 900;
   font-size: 3.8rem !important;
   // &::first-letter {
   //   transform: rotateY(180deg);
   // }
-=======
 #contact-form {
   height: 450px;
 }
@@ -87,7 +85,6 @@ nav {
 
 .call span {
   font-weight: 700;
->>>>>>> about2
 }
 
 .bg-red {
