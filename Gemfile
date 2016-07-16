@@ -14,6 +14,7 @@ gem 'haml-rails'
 gem 'faker'
 gem 'awesome_print'
 gem 'possessive'
+gem 'devise'
 
 group :test do
   gem "launchy"
