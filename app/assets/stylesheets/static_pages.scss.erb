@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+/* RGB */
+$color1: rgba(13, 19, 33, 1);
+$color2: rgba(29, 45, 68, 1);
+$color3: rgba(62, 92, 118, 1);
+$color4: rgba(116, 140, 171, 1);
+$color5: rgba(240, 235, 216, 1);
+
+
 header {
   background: url(<%= image_url('exotic-house.jpg') %>) no-repeat fixed;
   -webkit-background-size: cover;
@@ -79,14 +88,17 @@ nav {
 }
 
 /////////////////////////
- // Contact Form Style //
- ///////////////////////
+// Contact Form Style //
+///////////////////////
 #contact-form {
   padding: 2.5rem 0;
 }
 
 #form-container {
   max-width: 120rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
 }
 
 .form {
@@ -94,8 +106,41 @@ nav {
     padding: 1.25rem;
     border-radius: .8rem;
     font-size: 1.6rem;
+    background: $color2;
+    color: $color5;
+    font-weight: 400;
     &::-webkit-input-placeholder {
-      color:black;
+      color: $color4;
+      transition: 0.5s all;
+      font-weight: 300;
+    }
+    
+    &:focus {
+      &::-webkit-input-placeholder {
+        opacity: 0;
+      }
+    }
+  }
+  
+  button {
+    padding: 1.25rem;
+    border-radius: .8rem;
+    font-size: 1.75rem;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    background: #65AFFF;
+    color: $color1;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    box-shadow: 0 2px 5px black;
+    position: relative;
+    top: -1px;
+    transition: .5s all;
+    
+    &:active {
+      box-shadow: 0 0 0 black;
+      top: 0;
     }
   }
 }
@@ -112,13 +157,18 @@ nav {
 .bg-pink {
   background: pink;
 }
-.bg-black-50 {
-  background: rgba(0,0,0,0.55);
+.bg-dark-50 {
+  background: rgba(13, 19, 33, .55);
+  // background: rgba(0, 0, 0, .5);
 }
 .bg-dark {
-  background: #333;
+  background: $color1;
   color: white;
 }
 .container {
   max-width: 120rem;
+}
+
+#blah {
+  height: 300px;
 }
