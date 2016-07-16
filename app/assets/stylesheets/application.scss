@@ -12,9 +12,9 @@
  *
  *= require_self
  */
+@import "variables.scss";
 @import "reset.scss";
 @import "box-grid.scss";
-@import "variables.scss";
 @import "utilities.scss";
 @import "type.scss";
 @import "buttons.scss";
@@ -34,7 +34,6 @@ nav,#sm-nav{
 #sm-nav {
   padding: 0 2.5rem;
 }
-
 
 #logo {
   font-weight: 900;

@@ -1,11 +1,11 @@
 header {
   background: url('exotic-house.jpg') no-repeat fixed;
-  background-position: middle;
+  background-position: center center;
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
- 
+
 #header-container {
   height: 100vh;
   color: white;
@@ -33,9 +33,12 @@ header {
   transition: .5s all;
   box-shadow: 2px 2px 0px $color1,
             -2px -2px 0px $color1;
-  
+
   &:hover {
       background: #65AFFF;
       border: 2px solid #65AFFF;
   }
+}
+#down-arrow img {
+  width: 7rem;
 }
