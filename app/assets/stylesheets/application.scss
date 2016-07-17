@@ -22,7 +22,7 @@
 @import "header.scss";
 @import "about.scss";
 @import "form.scss";
-
+@import "testimonials.scss";
 // Nav
 nav,#sm-nav{
   height: 60px;
@@ -56,6 +56,6 @@ nav,#sm-nav{
 footer {
 
 }
-#form-container {
-
+#footer-container {
+  padding: 4rem 4rem 0 4rem;
 }
