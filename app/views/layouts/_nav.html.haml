@@ -2,9 +2,10 @@
   #nav-container.container.jc-between.ai-center.all-12
     %ul.box.all-12.y-center.even-space
       %li
-        home
+        =link_to "home", root_path
       %li
-        about
+        %a{href: "#about-link"} 
+          about 
       %li#logo
         LL
         // =image_tag "LLlogo.png", alt: "L&L logo", id:"logo"
